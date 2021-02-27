@@ -35,7 +35,7 @@ public class WholesaleAccountsApplication implements CommandLineRunner {
     @Override
     @Transactional
     public void run(final String... strings) throws Exception {
-        log.info("DB seed values running");
+        log.info("DB seed values runnings");
         List<Account> accounts = getAllAccounts();
         IntStream.range(0, accounts.size()).forEach(index -> {
             Account account = accounts.get(index);
